@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Images and forms 1: covering the box with an image</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      .box {
+        border: 5px solid #000;
+        width: 400px;
+        height: 200px;
+      }
+
+      img {max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        }
+        .myform {
+  border: 2px solid #000;
+  padding: 5px;
+}
+    #fldSearch #btnSubmit{font-size: inheit;
+    padding: 10px;}
+    #btnSubmit {background-color: rebeccapurple;
+    border: 0;
+color: white;
+border-radius: 5px;}
+    </style>
+
+  </head>
+
+  <body>
+    <div class="box">
+      <img src="balloons.jpg" alt="balloons">
+    </div>
+    <form method="post" action="" class="myform">
+        <div><label for="fldSearch">Keywords</label>
+        <input type="search" id="fldSearch" name="keywords">
+        <input type="submit" name="btnSubmit" id="btnSubmit" value="Search"></div>
+      </form>
+          
+  </body>
+
+</html>
