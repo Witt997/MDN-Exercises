@@ -41,18 +41,18 @@
   /* Your CSS below here */
 
   article {
-    background: url(top-image.png), 
-                url(bottom-image.png), 
-                linear-gradient(rgba(0,0,0,0.35) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.35));
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top, bottom, top;
     background: url(top-image.png) no-repeat top;
+    /* per inserire il fallback, farlo prima di quello buono, browser usa ultima dichiarazione che supporta */
+    background: url(top-image.png) no-repeat top, 
+                url(bottom-image.png) no-repeat bottom, 
+                linear-gradient(rgba(0,0,0,0.2) 20%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.2)) no-repeat top;
     background-color: white;
     border-top: 1mm solid red;
     border-bottom: 1mm solid red;
   }
   h1 {
     background-image: url(logo.png);
-    /* filter: drop-shadow(2px, 2px, 4px, black);*/
-    filter: drop-shadow(5px, 5px, 5px, black);
+    /* filter: drop-shadow(2px 2px 4px black);*/
+    filter: drop-shadow(2px 2px 4px black); 
+    /* per ombre non usare virgole */
   }
