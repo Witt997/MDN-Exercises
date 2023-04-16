@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Float: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        width: 500px;
+        padding: 0.5em;
+      }
+      .float {
+        margin: 15px;
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        background-color: rebeccapurple;
+        color: #fff;
+        padding: 1em;
+      }
+
+      /*task 1*/
+      .float1 {
+        float: left;
+        }
+
+      .float2 {
+        float: right;
+        }
+        /*task 2 */
+        .float3 {
+          float: left;
+        }
+
+        .below {
+          clear: both;
+        }
+        /*task 3 */
+        .float4 {
+        float: right;
+        background-color: rgb(207,232, 220);
+        }
+
+        .box1 {
+          display: flow-root;
+          background-color: rebeccapurple;
+          padding: 10px;
+          color: #fff;
+        }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="box">
+      <div class="float float1">One</div>
+      <div class="float float2">Two</div>
+      <p>The two boxes should float to either side of this text.</p>
+    </div>
+
+    <div class="box">
+  <div class="float float3">Float</div>
+  <p>This sentence appears next to the float.</p>
+  <p class="below">Cause this sentence to appear below the float.</p>
+</div>
+
+<div class="box box1">
+  <div class="float float4">Float</div>
+  <p>This sentence appears next to the float.</p>
+</div>
+  </body>
+
+</html>
